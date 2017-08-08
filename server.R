@@ -5,7 +5,7 @@
 # Date: 6th August 2017
 
 # Libraries and options ####
-setwd("C:/Users/zubeir/Desktop/DataScience/capstone/Word_Prediction")
+# setwd("C:/Users/zubeir/Desktop/DataScience/capstone/Word_Prediction")
 source('global.R')
 source('Capstone_Scripts_To_Predict_Data.R')
 
@@ -20,7 +20,7 @@ shinyServer(function(input, output) {
   prediction =  reactive( {
     
     # Get input
-    inputText = input$text
+    inputText = tolower(input$text)
     nSuggestion = input$slider
     
     # Predict

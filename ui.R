@@ -7,6 +7,7 @@
 # Libraries and options ####
 library(shiny)
 library(shinythemes)
+# setwd("C:/Users/zubeir/Desktop/DataScience/capstone/Word_Prediction")
 
 # Define the app ####
 
@@ -41,15 +42,21 @@ shinyUI(fluidPage(
       
       wellPanel(
         
+        # Link to application
+        helpText(a('App location on Shiny',
+                   href='https://zubeir321.shinyapps.io/Word_Prediction/',
+                   target = '_blank')
+        ),
+        
         # Link to report
         helpText(a('More information on the project',
-                   href='http://dataexcursions.com/Word-Prediction-Shiny-App', 
+                   href='Word-Prediction-Shiny-App', 
                    target = '_blank')
         ),
         
         # Link to repo
         helpText(a('Code location on GitHub',
-                   href='https://github.com/arttuK/word-prediction/tree/master/shiny',
+                   href='https://github.com/ZubeirSiddiqui/Capstone',
                    target = '_blank')
         ),
         

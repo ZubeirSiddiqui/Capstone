@@ -11,7 +11,7 @@ library(wordcloud)
 library(RColorBrewer)
 library(stringr)
 library(stringi)
-setwd("C:/Users/zubeir/Desktop/DataScience/capstone")
+# setwd("C:/Users/zubeir/Desktop/DataScience/capstone/Word_Prediction")
 # Load and create frame of freq1 data
 freq1 = readRDS("freq1.rds")
 freq1_data = freq1

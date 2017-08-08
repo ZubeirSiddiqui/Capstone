@@ -110,5 +110,8 @@ if(length(prediction$word_predict) == 0)
   prediction = head(freq1_data  %>% select(word, freq), n)
   names(prediction)[names(prediction) == 'word'] <- 'word_predict'
 }
+names(prediction)[names(prediction) == 'word_predict'] <- 'NextWord'
+names(prediction)[names(prediction) == 'freq'] <- 'Frequency'
 return(prediction)
 }
+
