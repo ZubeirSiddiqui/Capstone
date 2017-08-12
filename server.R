@@ -5,7 +5,6 @@
 # Date: 6th August 2017
 
 # Libraries and options ####
-# setwd("C:/Users/zubeir/Desktop/DataScience/capstone/Word_Prediction")
 source('global.R')
 source('Capstone_Scripts_To_Predict_Data.R')
 
