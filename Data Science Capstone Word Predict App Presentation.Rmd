@@ -1,0 +1,64 @@
+---
+title: "Data Science Capstone Next Word Predict Application Presentation"
+author: "Zubeir Siddiqui"
+date: "August 13, 2017"
+output: ioslides_presentation
+widescreen: true
+smaller: true
+transition-speed: slow
+logo: zubeir1.jpg
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+## Building a predictive text model
+<div class="gray2">
+
+- Create an algorithm for predicting the next word given one or more words as input using NLP
+
+- A large corpus of blog, news and twitter data was loaded and analyzed
+
+- 1% of blog, news and twitter data was used for final NLP
+
+- N-grams were extracted from the corpus and then used for building the predictive model
+
+- Various methods of improving the prediction accuracy and speed were explored
+
+</div>
+---
+---
+## Algorithm
+<div class="gray2">
+- N-gram model with stupid back-off strategy was used
+
+- Dataset was cleaned, lower-cased, removing links, twitter handles, punctuations, numbers and extra whitespaces, etc
+
+- Matrices from 5-gram to uni-gram were extracted using RWeka
+
+- Reduced size of model by taking 1% of total data
+</div>
+---
+---
+## Shiny App interface
+<div class="gray2">
+- Provides a text input box for user to type a word/phrase
+
+- Detects words typed and predicts the next word reactively
+
+- Draws Word Cloud to display size using frequency of word
+
+- Iterates from longest N-gram (5-gram) to shortest (2-gram)
+
+- Predicts using the longest, most frequent, matching N-gram
+
+- Option to select no, of prediction displayedon slide bar
+</div>
+---
+---
+## Links
+<div class="gray2">
+To run the Shiny application, click on the link to the Shiny application provided below. The Shiny application will open in the browser window presenting application and references. By moving the slider and entering word/phrase, new predictions are displayed along with word cloud.
+</div>
+- GitHub repo: [Next Word Predict Application - Project Files ](https://github.com/ZubeirSiddiqui/Capstone)
+- Shiny Application: [Next Word Predict Application - Shiny Application](https://zubeir321.shinyapps.io/Word_Prediction/)
+- This Presentation: [Next Word Predict Application Presentation ](http://rpubs.com/zubeir321/298978)

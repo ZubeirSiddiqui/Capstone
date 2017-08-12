@@ -35,7 +35,8 @@ shinyUI(
       ),
       
       # Table output
-      dataTableOutput('table')),
+      dataTableOutput('table')
+      ),
     
     # Mainpanel ####
     
@@ -86,7 +87,7 @@ tabPanel("References",
                ),
                # Link to report
                h4(helpText(a('More information on the project',
-                          href='Word-Prediction-Shiny-App', 
+                          href='http://rpubs.com/zubeir321/298978', 
                           target = '_blank'))
                ),
                
@@ -103,9 +104,14 @@ tabPanel("References",
                img(src="http://images.hacktabs.com//2013/06/swiftkey_logo_feature.png", height=100, width=200),
                img(src="http://media.tumblr.com/92a71d62ace9940f8ddd540400444fc4/tumblr_inline_mppo32jFBC1qz4rgp.png", height=100, width=200),
                img(src="http://brand.jhu.edu/content/uploads/2014/06/university.logo_.small_.horizontal.blue_.jpg", height=100, width=200),
-               HTML("</br>"),
-               HTML('</div>')
-             )
+               hr(),               
+               h3("4. Application designer and developer:"),
+               HTML("This application is designed and developed by"),
+               a("Zubeir A. Siddiqui", href = "mailto:zubeir.siddiqui@tcs.com"),
+               img(src="https://coursera-profile-photos.s3.amazonaws.com/a3/126d30e20011e68da7efe7d69bdb12/zubeir1.jpg", height=100, width=100),
+               p(img(src = "https://pbs.twimg.com/profile_images/614583061448036352/CBpFkPaz_400x400.png", height=40, width=40), strong(em(a("Connect at Linkedin",href="https://www.linkedin.com/in/zubeir-siddiqui-61758b117/")))),
+               hr()
+              )
            )
        )
 )
